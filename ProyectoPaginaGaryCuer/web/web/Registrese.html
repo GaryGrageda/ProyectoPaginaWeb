@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gary Cuer - Registrece</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css"/>
+        <link rel="icon" href="../img/GaryCuerLogo.png">
+        <link rel="stylesheet" href="../css/estilosFormulario.css"/>
+        <link rel="stylesheet" href="../css/estilosBarraNavegacion.css"/>
+    </head>
+    <body>
+             
+    <header class="cabeceraweb">
+        Los mejores Porta-cosméticos del mundo, incluso de la Argentina.
+        <h1 class="titulo">Gary Cuer</h1>
+
+        <a href="../web/index.html">
+        <img id="logo" src="../img/GaryCuerLogo.png" width="20%"/>
+        </a>
+
+    </header>
+
+   <nav class="navegacionprincipal">
+    <ul>
+       <li><a class="active" href="../web/index.html">Home</a></li> 
+       <li><a href="../web/Quienes Somos.html">Quienes somos</a></li>
+        <li><a href="../web/Nuestros_Productos.html">Nustros productos</a></li>
+       <li><a href="../web/Precios.html">Precios</a></li>
+      <li style="float:right"><a class="active" href="../web/Registrese.html">Regístrese</a></li>
+    </ul>
+   </nav>
+
+   <aside class="barralateral">
+        <br><blockquote class="bordes">Modelos recientes</blockquote><br>
+        <blockquote class="bordes">Bolsos y mochilas no hechos por nosotros</blockquote><br>
+        <blockquote class="bordes">Modelos exclusivos (De Temporada)</blockquote><br>
+   </aside>
+
+    <section class="contenidoprincipal">
+       <h3>Para poder comprar nuestros productos, regístrece completando los campos.</h3>
+
+        <div class="formulario">
+            <form action="" method="GET">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="persona_nombre" name="nombre">
+            
+            <label for="apellido">Apellido</label>
+            <input type="text" id="persona_apellido" name="apellido">
+            
+            <label for="dni">DNI (Sin comas ni puntos)</label>
+            <input type="number" id="persona_dni" name="dni" min="1">
+            
+            <label for="dire_local">Dirección de su Local</label>
+            <input type="text" id="persona_dire_local" name="dire_local">
+            
+            <label for="localidad">Nombre de su Local</label>
+            <input type="text" id="persona_nombre_local" name="localidad">
+            
+            <label for="localidad">Localidad</label>
+            <input type="text" id="persona_localidad" name="localidad">
+            
+            <label for="tel_linea">Teléfono de linea (Sin comas ni puntos)</label>
+            <input type="number" id="persona_tel_linea" name="tel_linea" min="1">
+            
+            <label for="celular">Celular (Sin comas ni puntos)</label>
+            <input type="number" id="persona_celular" name="celular" min="1">
+          
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="persona_email" name="correo">
+          
+            <input type="button" id="btnRegistrar" value="Regístrece">
+            
+            <div id="msgOK"></div>
+            <div id="msgERROR"></div>
+            
+          </form>
+            <section id="panelResultados"></section>
+            <section id="panelMensajes"></section>
+
+        </div>
+    </section>
+        
+   <footer class="pieprincipal">
+       
+       <small>derechos reservados</small>
+       <address>Telf: 5555-1292</address>
+       E-Mail: <address>armandocompu.ac@gmail.com</address>
+   </footer>
+        
+        <script src="../js/registrarPersona.js"></script>
+    </body>
+</html>

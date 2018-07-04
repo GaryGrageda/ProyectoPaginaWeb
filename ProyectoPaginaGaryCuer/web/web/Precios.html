@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gary Cuer - Precios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilos.css"/>
+        <link rel="stylesheet" href="../css/estilosFormulario.css"/>
+        <link rel="stylesheet" href="../css/estilosBarraNavegacion.css"/>
+        <link rel="stylesheet" href="../css/estilosTabla.css"/>
+        
+    </head>
+    <body>
+           
+    <header class="cabeceraweb">
+        Los mejores Porta-cosméticos del mundo, incluso de la Argentina.
+        <h1 class="titulo">Gary Cuer</h1>
+
+        <a href="../web/index.html">
+        <img id="logo" src="../img/GaryCuerLogo.png" width="20%"/>
+        </a>
+
+    </header>
+
+        
+   <nav class="navegacionprincipal">
+       
+   <ul>
+       <li><a class="active" href="../web/index.html">Home</a></li> 
+       <li><a href="../web/Quienes Somos.html">Quienes somos</a></li>
+        <li><a href="../web/Nuestros_Productos.html">Nustros productos</a></li>
+       <li><a href="../web/Precios.html">Precios</a></li>
+      <li style="float:right"><a class="active" href="../web/Registrese.html">Regístrese</a></li>
+    </ul>
+
+   </nav>
+
+        
+   <aside class="barralateral">
+      
+        <br><blockquote class="bordes">Modelos recientes</blockquote><br>
+        <blockquote class="bordes">Bolsos y mochilas no hechos por nosotros</blockquote><br>
+        <blockquote class="bordes">Modelos exclusivos (De Temporada)</blockquote><br>
+      
+   </aside>
+
+    <section class="contenidoprincipal">
+            <div class="texto">
+           <h2>Simule un pedido para calcular el precio final</h2>
+           </div>
+        
+            <table id="customers">
+              <tr>
+                <th>Nombre del Producto</th>
+                <th>Precio Unitario</th>
+                <th>Cantidad que desea pedir</th>
+              </tr>
+              <tr>
+                <td>Monedero</td>
+                <td>$50</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Cofre</td>
+                <td>$80</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Cofresito</td>
+                <td>$60</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Cubo</td>
+                <td>$50</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Rectángulo</td>
+                <td>$100</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Cartuchera</td>
+                <td>$110</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Chato</td>
+                <td>$50</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Chato II</td>
+                <td>$60</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Cilindro</td>
+                <td>$80</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+              <tr>
+                <td>Porta Cartera</td>
+                <td>$120</td>
+                <td><input type='number' min="1"/></td>
+              </tr>
+            </table>
+        <button id="datosbolsos">Mostrar Cálculo Total</button>
+        <section id="panelResultados"></section>
+        <section id="panelMensajes"></section>
+
+    </section>
+        
+        
+   <footer class="pieprincipal">
+       
+        <small>derechos reservados</small>
+        <address>Telf: 5555-1292</address>
+        E-Mail: <address>armandocompu.ac@gmail.com</address>
+   </footer>
+        <script src="../js/TestGary.js"></script>
+        <script src="../js/ConsultaPortaCosmetico.js"></script>
+        
+        
+        <script type="text/template" id="templatePersonasES6">
+`
+    <table>
+            <tr><th>Producto</th><th>Precio por unidad</th><th>Cantidad que pediré</th></tr>
+    ${ productos.map( producto => 
+    `
+        <tr class='producto_item'>
+            <td><value='${producto.nombreProducto}'/></td>
+            <td><value='${producto.precioUnidad}'/></td>
+            <td><input type='number' min="1"/></td>
+        </tr>
+    `
+        ).join('')
+      }
+    </table>
+`
+        </script>
+        <script src="../js/CalculoPedido.js"></script>
+    </body>
+</html>
