@@ -1,0 +1,104 @@
+body
+{
+    background-color: gainsboro;
+}
+
+.cabeceraweb
+{
+    font-size: xx-large;
+    text-shadow: 3px 2px gainsboro;
+    background: linear-gradient(#cc6600, gainsboro);
+    overflow: auto;
+}
+.textoTitulo
+{
+    font-family: batmfa__;
+}
+
+.navegacionprincipal
+{
+    background-color: #efa2a9;
+}
+
+.barralateral
+{
+	float: left;
+	height: 1120px;
+        background-image: url("../img/background-2490189_960_720.jpg");
+}
+
+blockquote.bordes
+{
+    border-left: 8px solid red;
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 4px 8px;
+}
+
+.contenidoprincipal
+{
+	background-color: #4543D0;
+	margin-left: 340px;
+	margin-top: 10px;
+	padding-left: 15px;
+        padding-right: 15px;
+	padding-top: 15px;
+}
+
+.pieprincipal
+{
+	background-color: #2B948C;
+	clear: both;
+	margin-top: 20px;
+}
+
+li
+{
+	display: inline-block;
+        margin: 4px 8px;
+}
+
+.titulo
+{
+    font-size: xx-large;
+    text-align: center;
+}
+
+#logo
+{    
+    float: left;
+}
+
+section.texto
+{
+    text-align: center;
+}
+
+h2
+{
+    text-align: center;
+    text-shadow: 3px 2px gainsboro;
+    font-size: xx-large;
+}
+
+section
+{
+    background-image: url("../img/stainedpaper4.jpg");
+}
+
+h1
+{
+    display: none;
+}
+
+button
+{
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
